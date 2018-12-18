@@ -32,6 +32,6 @@ method Q2_t4(x : int, y : int) returns (big : int, small : int)
 }
 
 /* Question 2, Bonus:
-    The only was this could be made is if the you rewrote the method to do other stuff then what it's currently
+    The only way this could be made is if the you rewrote the method to do other stuff then what it's currently
     ment to do (modify the value in other ways)
  */
