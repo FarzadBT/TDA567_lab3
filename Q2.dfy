@@ -14,10 +14,10 @@ method Q2_t3(x : int, y : int) returns (big : int, small : int)
     requires x != y;
     ensures big > small;
 {
-  if (x > y)
-   {big, small := x, y;}
-  else
-   {big, small := y, x;}
+    if (x > y)
+        {big, small := x, y;}
+    else
+        {big, small := y, x;}
 }
 
 /* Question 2, Task 4:
@@ -25,10 +25,10 @@ method Q2_t3(x : int, y : int) returns (big : int, small : int)
 method Q2_t4(x : int, y : int) returns (big : int, small : int) 
   ensures big >= small;
 {
-  if (x > y)
-   {big, small := x, y;}
-  else
-   {big, small := y, x;}
+    if (x > y)
+        {big, small := x, y;}
+    else
+        {big, small := y, x;}
 }
 
 /* Question 2, Bonus:
