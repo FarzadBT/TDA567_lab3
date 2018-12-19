@@ -17,11 +17,12 @@ method Q3(n0 : int, m0 : int) returns (res : int)
         {n,m := n0, m0;} 
     else 
         {n,m := -n0, -m0;}
-    while (0 < n) 
-        decreases  n - 0
-        invariant n0 >= 0 ==> (n0 - n) * m0 == res;
-        invariant n0 < 0 ==> (n0 + n) * m0 == res;
-    { 
+    while (0 < n)
+        invariant 0 <= n 
+        invariant n0 >= 0 ==> (n0 - n) * m == res;
+        invariant n0 < 0 ==> (-n0 - n) * m == res;
+        decreases n
+  { 
         res := res + m; 
         n := n - 1; 
     }
